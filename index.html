@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vitor Paraizo</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Vitor Paraizo</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contatos</a></li>
+                <li><a href="#experience">Linguagens</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Vitor Paraizo</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contatos</a></li>
+                <li><a href="#linguagens" onclick="toggleMenu()">Linguagens</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__text">
+            <p class="section__text__p1">Olá, Eu Sou</p>
+            <h1 class="title">Vitor Paraizo</h1>
+            <P class="section__text__p2">Frontend Development</P>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/cv-paraizo.pdf')">Baixe CV</button>
+
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'">Contato</button>
+            </div>
+            <div id="social-container">
+                <img 
+                src="./assets/434743.webp" alt="My Linkedin profile"
+                class="icon" 
+                onclick="location.href='https://linkedin.com/in/vitorparaizo'">
+            
+                <img 
+                src="./assets/icone-github-grise.png" alt="My Github"
+                class="icon" 
+                onclick="location.href='https://github.com/vitorparaizo'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Saiba Mais</p>
+        <h1 class="title">Sobre Mim</h1>
+        <div class="section-container">
+             <div class="section__pic-container">
+                <img src="./assets/profile_photo.png" 
+                alt="paraizo's photo" 
+                class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/html-icon.webp" 
+                        alt="html icon"  
+                        class="icon"/>
+                        <h3>Experiências</h3>
+                        <p>2 Anos<br/>Desenvolvimento Frontend</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                        src="./assets/html-icon.webp"
+                        alt="experencias icon"
+                        class="icon"/>
+                        <h3>Formação</h3>
+                        <p> Instituto Federal de Rondônia<br/>Técnico em Informática</p>
+                        <br>
+                        <p> Universidade Católica de Pernambuco<br/>Sistemas Para Internet</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit. Officia sequi obcaecati quae 
+                        explicabo incidunt impedit ut perspiciatis voluptas tempora 
+                        quibusdam. Suscipit commodi voluptatibus repudiandae? Obcaecati aliquid
+                        quam a animi commodi in voluptatem repellendus eius facilis recusandae, 
+                        perspiciatis adipisci nihil vero dolores rerum saepe magni sapiente suscipit 
+                        rem ad quasi neque!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Veja as minhas</p>
+        <h1 class="title">Experências</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                <h2 class="experience-sub-title">Desenvolvimento Frontend</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/correct.png" 
+                        alt="experience-icon"
+                        class="icon"/>
+                        <div>
+                            <h3>HTML</h3>
+                            <P>Experienced</P>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/correct.png" 
+                        alt="experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>CSS</h3>
+                            <P>Experienced</P>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/correct.png" 
+                        alt="experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>UI/UX Design</h3>
+                            <P>Experienced</P>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/correct.png" 
+                        alt="experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <P>Experienced</P>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Desenvolvimento Frontend</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/correct.png" 
+                        alt="experience-icon"
+                        class="icon"/>
+                        <div>
+                            <h3>Python</h3>
+                            <P>Experienced</P>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/correct.png" 
+                        alt="experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>MySQL</h3>
+                            <P>Experienced</P>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/correct.png" 
+                        alt="experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>Django</h3>
+                            <P>Experienced</P>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/correct.png" 
+                        alt="experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>Java</h3>
+                            <P>Experienced</P>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <section id="contact">
+            <p class="section__text__p1">Formas de</p>
+            <h1 class="title">Contato</h1>
+            <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/666162.png" 
+                alt="mail-icon"
+                class="icon contact-icon"/>
+                <p><a href="mailto:joaovitorparaizo1007@gmail.com">Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/dark-linkedin-icon.png" 
+                alt="linkedin-icon"
+                class="icon contact-icon"/>
+                <p><a href="https://linkedin.com/in/vitorparaizo">Linkedin</a></p>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                    <li><a href="#experience">Linguagens</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Vitor Paraizo. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
